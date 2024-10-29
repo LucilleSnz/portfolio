@@ -110,6 +110,10 @@
     .burger-menu{
         right: 20px;
     }
+
+    .dropdown-menu {
+        right: 25px;
+    }
 }
 
   /* Mobile */
@@ -121,5 +125,9 @@
 
     .burger-menu{
         right: 50px;
+    }
+
+    .dropdown-menu {
+        right: 35px;
     }
 }
