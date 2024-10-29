@@ -14,9 +14,13 @@ function App() {
       <div className="App">
           <Petals />
           <Header />
+          <div className="separator"></div>
           <Projects />
+          <div className="separator"></div>
           <Skills />
+          <div className="separator"></div>
           <About />
+          <div className="separator"></div>
           <ContactForm />
       </div>
   );

@@ -1,9 +1,16 @@
 .App {
   text-align: center;
-  background: linear-gradient(0.9turn, #ddcab9, #fbfbfb, #5fa494);
+  background: linear-gradient(0.9turn, #ddcab9, #fbfbfb, #69a899);
   padding-bottom: 20px;
 }
 
+.separator {
+  border-top: 2px solid #bca374; 
+  border-bottom: 2px solid #bca374; 
+  background-color: white;
+  height: 3px; 
+  width: 100%;
+}
 
 .App-logo {
   height: 40vmin;
@@ -30,25 +37,6 @@
 .App-link {
   color: #61dafb;
 }
-
-.separator {
-  margin: 10px 0; /* Réduire la marge en haut et en bas */
-  height: 5px; /* Réduire la hauteur du séparateur pour le rendre plus fin */
-  background-color: rgba(188, 162, 116, 0.5); /* Couleur de fond avec transparence */
-}
-
-.separator svg {
-  display: block;
-  width: 100%; /* Prend toute la largeur de la page */
-  height: 100%;
-}
-
-.separator path {
-  stroke: #bca374; /* Couleur de la vague */
-  stroke-width: 3px; /* Épaisseur de la ligne */
-  fill: none; /* Pas de remplissage, uniquement des lignes */
-}
-
 
 #petal-container {
   position: fixed;
