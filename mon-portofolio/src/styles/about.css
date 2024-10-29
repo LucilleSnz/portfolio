@@ -1,0 +1,166 @@
+/* Centrage du titre en haut */
+.about {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    box-shadow: 10px 5px 20px #dfd7e2;
+    padding: 0px 100px 70px 100px;
+}
+
+.about-container {
+    display: flex;
+    flex-wrap: wrap; /* Pour ajuster le positionnement en responsive */
+    justify-content: space-around;
+    gap: 20px;
+    padding: 20px 0;
+}
+
+/* Cartes horizontales avec décalage en quinconce */
+.about-block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;  /* Centre le texte dans le cercle */
+    width: 220px;  /* Ajustez la taille du cercle si besoin */
+    height: 220px;
+    border: 3px double #bca374;
+    border-radius: 50%;
+    padding: 10px;  /* Espace autour du texte */
+    box-sizing: border-box;  /* Inclut le padding dans la taille */
+    overflow: hidden;  /* Cache le texte qui dépasse */
+    white-space: normal;  /* Permet au texte de passer à la ligne */
+    font-size: 14px;  /* Taille du texte */
+    line-height: 1.2;  /* Hauteur de ligne pour gérer l'espacement */
+    background-color: #ffffff; /* Fond blanc */
+    color: #333;  /* Couleur du texte */
+    cursor:pointer;
+    margin-top: 20px;
+}
+
+/* Décalage en quinconce (une carte en haut, l'autre en bas) */
+.about-block:nth-child(odd) {
+    transform: translateY(-20px); /* Décalage vers le haut pour les éléments impairs */
+}
+
+.about-block:nth-child(even) {
+    transform: translateY(20px); /* Décalage vers le bas pour les éléments pairs */
+}
+
+/* Effet au survol */
+.about-block:hover {
+    transform: translateY(-5px) scale(1.05); /* Agrandissement au survol pour plus de dynamisme */
+}
+
+/* Style des cartes */
+.flip-card {
+    width: 100%;
+    position: relative;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px; /* Ajustement des bords arrondis */
+}
+
+.flip-card-front {
+    background-color: #f7f7f7;
+    transition: opacity 0.5s ease-in-out;
+
+}
+
+.flip-card-back {
+    background-color: #f5f5f5;
+    transform: rotateY(180deg);
+    font-family: 'Cursive', sans-serif;
+    color: #555;
+    font-size: 1.25em;
+    font-weight: bold;
+}
+
+/* Icônes dans les cartes */
+.icon {
+    font-size: 4rem;
+    color: #555;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Conteneur avec décalage en quinconce */
+.about-wrapper {
+    position: relative;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Décalage en quinconce (une carte en haut, l'autre en bas) */
+.about-wrapper:nth-child(odd) {
+    transform: translateY(-20px); /* Décalage vers le haut pour les éléments impairs */
+}
+
+.about-wrapper:nth-child(even) {
+    transform: translateY(20px); /* Décalage vers le bas pour les éléments pairs */
+}
+
+.about-wrapper:hover .about-block {
+    transform: scale(1.05); /* Agrandissement au survol */
+}
+
+.rotate {
+    transform: rotateY(180deg); /* Rotation au clic ou sur action */
+}
+
+.rotate .flip-card-front {
+    opacity: 0; /* Icône disparaît */
+}
+
+
+/* Responsive Design pour tablettes et smartphones */
+@media (max-width: 1024px) {
+    .about-container {
+        flex-direction: column; /* Disposition en colonne sur petits écrans */
+    }
+
+    .about-block {
+        width: 90%;
+        max-width: 350px;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 767px) {
+    .about-block {
+        width: 100%;
+        max-width: 350px;
+        margin-bottom: 20px;
+        height: 155px;
+    }
+
+    .about-container {
+        width: 100%;
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+}

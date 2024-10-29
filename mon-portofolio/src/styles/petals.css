@@ -1,0 +1,27 @@
+.petal {
+    position: absolute;
+    top: -150px; /* Démarre au-dessus de l'écran */
+    animation-name: fall;
+    animation-timing-function: ease-in-out; /* Douceur dans la chute */
+    background-size: contain; /* Adapter l'image à la taille de l'élément */
+    background-repeat: no-repeat; /* Pas de répétition de l'image */
+    opacity: 0.8; /* Ajoute un léger effet de transparence */
+}
+
+@keyframes fall {
+    0% {
+        transform: translateY(0); /* Commence tout en haut */
+        opacity: 0.8; /* Totalement visible au début */
+    }
+    100% {
+        transform: translateY(100vh); /* Tombe tout en bas de la fenêtre */
+        opacity: 0; /* Devient légèrement transparent à la fin */
+    }
+}
+
+.petal-container {
+    position: absolute;
+    width: 100%;
+    height: 100vh; /* Assure que le conteneur occupe toute la hauteur de la fenêtre */
+    overflow: hidden; /* Empêche les pétales de sortir des limites visibles */
+}

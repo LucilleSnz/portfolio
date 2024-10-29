@@ -1,0 +1,86 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.separator {
+  margin: 10px 0; /* Réduire la marge en haut et en bas */
+  height: 5px; /* Réduire la hauteur du séparateur pour le rendre plus fin */
+  background-color: rgba(188, 162, 116, 0.5); /* Couleur de fond avec transparence */
+}
+
+.separator svg {
+  display: block;
+  width: 100%; /* Prend toute la largeur de la page */
+  height: 100%;
+}
+
+.separator path {
+  stroke: #bca374; /* Couleur de la vague */
+  stroke-width: 3px; /* Épaisseur de la ligne */
+  fill: none; /* Pas de remplissage, uniquement des lignes */
+}
+
+
+#petal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none; /* Empêche de cliquer sur les pétales */
+  z-index: 9999; /* S'assure que les pétales passent devant tout */
+}
+
+.petal {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  pointer-events: none;
+  animation: fall linear infinite;
+  z-index: 1000;
+}
+
+@keyframes fall {
+  to {
+      transform: translateY(100vh) rotate(360deg);
+      opacity: 0;
+  }
+}
+
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

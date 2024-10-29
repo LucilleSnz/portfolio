@@ -1,0 +1,102 @@
+/* Section principale du carrousel */
+.projects {
+    width: 100vw; /* Prendre toute la largeur de l'écran */
+    overflow: hidden; /* Éviter tout débordement sur les petits écrans */
+    box-shadow: 10px 5px 20px #dfd7e2; 
+    margin: 2rem 0;
+    color: #333;
+    padding-bottom: 70px;
+}
+
+h1{
+    font-size: 2.5rem;
+}
+
+/* Centrage du contenu interne du carrousel */
+.projects-container {
+    max-width: 1200px; /* Limiter la taille maximale du conteneur */
+    margin: 0 auto; /* Centre le conteneur */
+    padding: 0 15px; /* Ajouter un peu de padding pour les bords */
+}
+
+/* Styles pour chaque carte projet */
+.project-card {
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    transition: transform 0.3s;
+    padding: 30px;
+}
+
+.project-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.project-card a {
+    text-decoration: none; /* Supprime le soulignement des liens */
+}
+
+.project-card img:hover {
+    transform: scale(1.05);
+}
+
+.project-card h3 {
+    color: #333;
+    margin-top: 10px;
+}
+
+.slick-slide {
+    display: flex;
+    justify-content: center;
+}
+
+.slick-list {
+    overflow: hidden;
+    margin: 0 -10px;
+}
+
+.slick-slide img {
+    transition: transform 0.3s ease;
+}
+
+.slick-prev:before,
+.slick-next:before {
+    background-color:#555;
+    font-size: 30px;
+    border-radius: 100%;
+}
+
+.slick-prev {
+    left: -35px;
+}
+
+.slick-next {
+    right: -35px;
+}
+
+/* --- Responsive Design --- */
+
+/* Pour les tablettes */
+@media (max-width: 1024px) {
+    .projects-container {
+        padding: 0 10px; /* Réduire le padding latéral */
+    }
+
+    .project-card {
+        width: 90%; /* Réduire la largeur des cartes sur tablette */
+        margin: 0 auto 20px; /* Espacer un peu plus les cartes */
+    }
+}
+
+/* Pour les mobiles */
+@media (max-width: 767px) {
+    .project-card {
+        width: 100%; /* Prendre toute la largeur sur mobile */
+        margin-bottom: 20px; /* Espacer verticalement les cartes */
+    }
+
+    .projects-container {
+        padding: 0 5px; /* Réduire encore le padding pour mobile */
+    }
+}

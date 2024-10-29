@@ -1,0 +1,102 @@
+.header {
+    height: 100vh;
+    background-image: url('../images/fond.jpg'), url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none"><path fill="%23bca374" d="M0,224L40,213.3C80,203,160,181,240,181.3C320,181,400,203,480,192C560,181,640,139,720,128C800,117,880,139,960,160C1040,181,1120,203,1200,218.7C1280,235,1360,245,1400,250L1440,256L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"></path></svg>');
+    background-size: cover, auto;
+    background-position: center, bottom;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    box-shadow: 10px 5px 20px #dfd7e2;
+}
+
+
+.header-content h1{
+    margin: 0;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    text-align: center;
+}
+
+.header-img {
+    width: 150px;
+    height: auto;
+    border-radius: 50%; /* Forme ronde pour l'image */
+    border: 6px double #bca374; /* Bordure double dorée/beige pour un effet ancien */
+    padding: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Ombre subtile */
+    background-color: #fffdf7; /* Fond blanc cassé à l'intérieur du cadre */
+}
+
+.header-content p{
+    font-family: cursive;    
+    font-size: 2em;
+    font-style: italic;
+    color: white;
+    margin-top: 20px;
+    color: #2c2c2c;
+    font-weight: bold;
+}
+
+.burger-menu {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    z-index: 1000; /* Toujours au-dessus des autres éléments */
+}
+
+.burger-menu:hover {
+    transform: scale(1.1); /* Agrandir légèrement au survol */
+    transition: transform 0.2s; /* Transition douce */
+}
+
+.dropdown-menu {
+    position: fixed;
+    top: 60px; /* Position juste en dessous du bouton burger */
+    right: 20px;
+    background-color: white;
+    border: 3px double #bca374;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    z-index: 999;
+}
+
+.dropdown-menu ul {
+    list-style: none; /* Supprime les puces */
+    padding: 0; /* Enlève le padding */
+    margin: 0; /* Enlève la marge */
+}
+
+.dropdown-menu li {
+    padding: 10px 15px; /* Espacement des éléments du menu */
+    cursor: pointer; /* Curseur en main */
+    transition: background-color 0.2s; /* Transition pour l'effet au survol */
+}
+
+.dropdown-menu li:hover {
+    background-color: #f0f0f0; /* Change la couleur de fond au survol */
+}
+
+.chevron-container {
+    position: absolute;
+    bottom: 20px; /* Positionne la flèche en bas */
+    right: 20px; /* Ajuste la position selon tes besoins */
+    cursor: pointer; /* Curseur en main */
+    opacity: 0.7; /* Transparence */
+    transition: opacity 0.7s; /* Transition pour l'effet au survol */
+}
+
+.chevron-container:hover {
+    opacity: 1; /* Rendre la flèche opaque au survol */
+}
+
