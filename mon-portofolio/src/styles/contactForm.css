@@ -1,105 +1,93 @@
-/* Conteneur global du formulaire */
+.contact-form,
 .contact-form-container {
+    border-radius: 10px;
     width: 100%;
+    box-sizing: border-box
+}
+
+.contact-form-container {
     max-width: 600px;
     margin: 50px auto;
     background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, .1);
     text-align: -moz-center;
     align-items: center;
-    padding: 10px 0 90px; /* Ajoute un padding minimal pour éviter que le contenu touche le bord de l'écran */
-    box-sizing: border-box;
+    padding: 10px 0 90px;
     background-image: url('../images/feuille\ contact.png');
     background-repeat: space;
     background-size: cover;
-    box-shadow: 10px 5px 20px #dfd7e2; 
-
+    box-shadow: 10px 5px 20px #dfd7e2
 }
 
-/* Style des titres */
 .contact-form-container h2 {
     font-size: 2em;
     margin-bottom: 20px;
-    color: #333;
+    color: #333
 }
 
-/* Conteneur des champs du formulaire */
 .contact-form {
     display: flex;
     flex-direction: column;
-    width: 100%;
     max-width: 500px;
     padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Légère ombre */
-    box-sizing: border-box;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, .1)
 }
 
 h2 {
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 20px
 }
 
-/* Style des champs d'entrée */
 .form-group {
     margin-bottom: 15px;
-    text-align: left;
+    text-align: left
 }
 
 .form-group label {
     display: block;
     margin-bottom: 5px;
-    font-weight: bold;
-    
+    font-weight: 700
 }
 
 .form-group input,
 .form-group textarea {
-    width: 100%; /* Prendre toute la largeur du formulaire */
-    padding: 10px; /* Padding à l'intérieur du champ */
+    width: 100%;
+    padding: 10px;
     border: 1px solid #ccc;
-    border-radius: 5px; /* Coins arrondis */
-    box-sizing: border-box; /* S'assurer que le padding ne dépasse pas la largeur */
-    font-size: 16px;
-    outline: none; 
-    font-size: 1em;
+    border-radius: 5px;
+    box-sizing: border-box;
+    outline: 0;
     font-family: cursive;
     font-style: bold;
-    font-size: 1.2em;
+    font-size: 1.2em
 }
 
-/* Textarea */
 .form-group textarea {
     height: 150px;
     resize: none;
     font-family: cursive;
     font-style: bold;
-    font-size: 1.2em;
+    font-size: 1.2em
 }
 
-
-/* Bouton de soumission */
 .submit-btn {
     background-color: #bca374;
-    color: white;
+    color: #fff;
     padding: 10px 15px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     font-size: 1em;
-    transition: background-color 0.3s ease;
+    transition: background-color .3s
 }
 
 .submit-btn:hover {
-    background-color: #555;
+    background-color: #555
 }
 
-/* Message de confirmation */
 .form-submitted p {
-    font-size: 1.2em;
     color: #8dbb98;
     font-size: 1.7em;
     font-family: cursive;
-    font-weight: bold;
+    font-weight: 700
 }
