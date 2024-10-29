@@ -135,7 +135,7 @@ h2 {
     }
 
 
-    .container{
+    .container {
         gap: 15px;
     }
 
@@ -147,7 +147,7 @@ h2 {
     .about-block:nth-child(odd),
     .about-wrapper:nth-child(odd) {
         transform: none;
-    }       
+    }
 
     .about-block:nth-child(odd),
     .about-wrapper:nth-child(odd) {
@@ -159,6 +159,10 @@ h2 {
         width: 90%;
         max-width: 350px;
         margin-bottom: 20px;
+    }
+
+    .about-block .flip-card-inner.rotate {
+        animation: rotateCard 0.8s forwards;
     }
 }
 
@@ -180,14 +184,14 @@ h2 {
     .about-block:nth-child(odd),
     .about-wrapper:nth-child(odd) {
         transform: none;
-    }       
+    }
 
     .about-block:nth-child(odd),
     .about-wrapper:nth-child(odd) {
         transform: none;
     }
 
-    .container{
+    .container {
         gap: 15px;
     }
 
@@ -216,4 +220,20 @@ h2 {
     .icon {
         font-size: 3rem;
     }
+
+    .about-block .flip-card-inner.rotate {
+        animation: rotateCard 0.8s forwards;
+    }
 }
+
+/* Animation de rotation */
+@keyframes rotateCard {
+    from {
+        transform: rotateY(0deg);
+    }
+
+    to {
+        transform: rotateY(180deg);
+    }
+}
+

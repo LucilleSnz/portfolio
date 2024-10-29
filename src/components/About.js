@@ -1,23 +1,41 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import '../styles/about.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBriefcase, faKeyboard, faPersonBreastfeeding, faFaceLaughWink } from '@fortawesome/free-solid-svg-icons';
 
 
-
 function About() {
-    // Utilisation de useState pour suivre l'état de rotation des cartes
     const [rotatedBlocks, setRotatedBlocks] = useState({});
 
-    // Fonction pour gérer le clic et faire tourner la carte
-    const handleBlockClick = (index) => {
-        setRotatedBlocks((prevState) => ({
-            ...prevState,
-            [index]: !prevState[index], // Inverse l'état de la carte (true/false)
-        }));
-    };
+    useEffect(() => {
+        const handleScroll = () => {
+            const aboutBlocks = document.querySelectorAll('.about-block');
 
+            aboutBlocks.forEach((block, index) => {
+                const rect = block.getBoundingClientRect();
+                if (rect.top >= 0 && rect.bottom <= window.innerHeight) {
+                    setRotatedBlocks(prevState => ({
+                        ...prevState,
+                        [index + 1]: true,
+                    }));
+                }
+            });
+        };
 
+        
+
+        window.addEventListener('scroll', handleScroll);
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
+
+        // Fonction pour gérer le clic et faire tourner la carte
+        const handleBlockClick = (index) => {
+            setRotatedBlocks((prevState) => ({
+                ...prevState,
+                [index]: !prevState[index], // Inverse l'état de la carte (true/false)
+            }));
+        };
+    
 
     return (
         <section className="about" id="about">
@@ -68,7 +86,7 @@ function About() {
                     </div>
                 </div>
 
-              {/* Bloc 4 */}
+                {/* Bloc 4 */}
                 <div className="about-block" onClick={() => handleBlockClick(4)}>
                     <div className="flip-card">
                         <div className={`flip-card-inner ${rotatedBlocks[4] ? 'rotate' : ''}`}>
