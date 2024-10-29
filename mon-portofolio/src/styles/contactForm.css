@@ -2,27 +2,26 @@
 .contact-form-container {
     border-radius: 10px;
     width: 100%;
-    box-sizing: border-box
+    box-sizing: border-box;
 }
 
 .contact-form-container {
     max-width: 600px;
     margin: 50px auto;
     background-color: #fff;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, .1);
-    text-align: -moz-center;
-    align-items: center;
-    padding: 10px 0 90px;
     background-image: url('../images/feuille\ contact.png');
     background-repeat: space;
     background-size: cover;
-    box-shadow: 10px 5px 20px #dfd7e2
+    box-shadow: 10px 5px 20px #dfd7e2;
+    text-align: center;
+    align-items: center;
+    padding: 20px;
 }
 
 .contact-form-container h2 {
     font-size: 2em;
     margin-bottom: 20px;
-    color: #333
+    color: #333;
 }
 
 .contact-form {
@@ -30,23 +29,23 @@
     flex-direction: column;
     max-width: 500px;
     padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, .1)
+    box-shadow: 0 4px 8px rgba(0, 0, 0, .1);
 }
 
 h2 {
     text-align: center;
-    margin-bottom: 20px
+    margin-bottom: 20px;
 }
 
 .form-group {
     margin-bottom: 15px;
-    text-align: left
+    text-align: left;
 }
 
 .form-group label {
     display: block;
     margin-bottom: 5px;
-    font-weight: 700
+    font-weight: 700;
 }
 
 .form-group input,
@@ -56,18 +55,16 @@ h2 {
     border: 1px solid #ccc;
     border-radius: 5px;
     box-sizing: border-box;
-    outline: 0;
+    outline: none;
     font-family: cursive;
-    font-style: bold;
-    font-size: 1.2em
+    font-size: 1.2em;
 }
 
 .form-group textarea {
     height: 150px;
     resize: none;
     font-family: cursive;
-    font-style: bold;
-    font-size: 1.2em
+    font-size: 1.2em;
 }
 
 .submit-btn {
@@ -78,16 +75,74 @@ h2 {
     border-radius: 5px;
     cursor: pointer;
     font-size: 1em;
-    transition: background-color .3s
+    transition: background-color 0.3s;
 }
 
 .submit-btn:hover {
-    background-color: #555
+    background-color: #555;
 }
 
 .form-submitted p {
     color: #8dbb98;
     font-size: 1.7em;
     font-family: cursive;
-    font-weight: 700
+    font-weight: 700;
+}
+
+/* Responsive Adjustments */
+
+/* Tablet */
+@media (max-width: 1024px) {
+    .contact-form-container {
+        padding: 20px;
+        max-width: 90%;
+        margin: 40px auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact-form {
+        padding: 15px;
+    }
+
+    .contact-form-container h2 {
+        font-size: 1.8em;
+    }
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+    .contact-form-container {
+        padding: 15px;
+        margin: 20px auto;
+        max-width: 100%;
+        box-shadow: none;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact-form-container h2 {
+        font-size: 1.5em;
+        margin-bottom: 15px;
+    }
+
+    .contact-form {
+        padding: 10px;
+        box-shadow: none;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        font-size: 1em;
+        padding: 8px;
+    }
+
+    .submit-btn {
+        padding: 8px 12px;
+        font-size: 0.9em;
+    }
+
+    .form-submitted p {
+        font-size: 1.4em;
+    }
 }

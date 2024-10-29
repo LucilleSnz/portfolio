@@ -1,6 +1,6 @@
 .project-card,
 .slick-slide img {
-    transition: transform .3s
+    transition: transform 0.3s;
 }
 
 .projects {
@@ -8,87 +8,121 @@
     overflow: hidden;
     margin: 2rem 0;
     color: #333;
-    padding-bottom: 70px
+    padding-bottom: 70px;
 }
 
 h1 {
-    font-size: 2.5rem
+    font-size: 2.5rem;
+    text-align: center;
 }
 
 .projects-container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 15px
+    padding: 0 15px;
 }
 
 .project-card {
     box-sizing: border-box;
     flex: 0 0 auto;
-    padding: 30px
+    padding: 30px;
+    transition: transform 0.3s;
 }
 
 .project-card img {
     width: 100%;
     height: auto;
-    border-radius: 8px
+    border-radius: 8px;
 }
 
 .project-card a {
-    text-decoration: none
+    text-decoration: none;
 }
 
 .project-card img:hover {
-    transform: scale(1.05)
+    transform: scale(1.05);
 }
 
 .project-card h3 {
     color: #333;
-    margin-top: 10px
+    margin-top: 10px;
+    text-align: center;
 }
 
 .slick-slide {
     display: flex;
-    justify-content: center
+    justify-content: center;
 }
 
 .slick-list {
     overflow: hidden;
-    margin: 0 -10px
+    margin: 0 -10px;
 }
 
 .slick-next:before,
 .slick-prev:before {
     background-color: #555;
     font-size: 30px;
-    border-radius: 100%
+    border-radius: 100%;
 }
 
 .slick-prev {
-    left: -35px
+    left: -35px;
 }
 
 .slick-next {
-    right: -35px
+    right: -35px;
 }
 
-@media (max-width:1024px) {
+/* Responsive Adjustments */
+
+/* Tablet */
+@media (max-width: 1024px) {
     .projects-container {
-        padding: 0 10px
+        padding: 0 10px;
     }
 
     .project-card {
         width: 90%;
-        margin: 0 auto 20px
+        margin: 0 auto 20px;
+    }
+
+    h1 {
+        font-size: 2.2rem;
+    }
+
+    .slick-next:before,
+    .slick-prev:before {
+        font-size: 24px;
     }
 }
 
-@media (max-width:767px) {
-    .project-card {
-        width: 100%;
-        margin-bottom: 20px
+/* Mobile */
+@media (max-width: 767px) {
+    .projects {
+        padding-bottom: 50px;
     }
 
     .projects-container {
-        padding: 0 5px
+        padding: 0 5px;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    .project-card {
+        width: 100%;
+        padding: 20px;
+        margin-bottom: 15px;
+    }
+
+    .project-card h3 {
+        font-size: 1.1rem;
+    }
+
+    .slick-next:before,
+    .slick-prev:before {
+        font-size: 20px;
     }
 }

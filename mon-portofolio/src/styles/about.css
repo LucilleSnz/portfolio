@@ -1,20 +1,21 @@
 .flip-card,
 .flip-card-inner {
     position: relative;
-    width: 100%
+    width: 100%;
 }
 
 .about-block,
 h2 {
     text-align: center;
-    color: #333
+    color: #333;
 }
 
 .about {
     display: flex;
     flex-direction: column;
     text-align: center;
-    padding: 0 100px 70px
+    padding: 0 80px 50px;
+    margin: 1rem 0;
 }
 
 .about-container {
@@ -22,7 +23,7 @@ h2 {
     flex-wrap: wrap;
     justify-content: space-around;
     gap: 20px;
-    padding: 20px 0
+    padding: 20px 0;
 }
 
 .about-block {
@@ -41,33 +42,34 @@ h2 {
     line-height: 1.2;
     background-color: #fff;
     cursor: pointer;
-    margin-top: 20px
+    margin-top: 20px;
+    transition: transform 0.3s ease-in-out;
 }
 
 .about-block:nth-child(odd),
 .about-wrapper:nth-child(odd) {
-    transform: translateY(-20px)
+    transform: translateY(-20px);
 }
 
 .about-block:nth-child(2n),
 .about-wrapper:nth-child(2n) {
-    transform: translateY(20px)
+    transform: translateY(20px);
 }
 
 .about-block:hover {
-    transform: translateY(-5px) scale(1.05)
+    transform: translateY(-5px) scale(1.05);
 }
 
 .flip-card-inner {
     height: 100%;
     text-align: center;
-    transition: transform .8s;
-    transform-style: preserve-3d
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
 }
 
 .flip-card-back,
 .rotate {
-    transform: rotateY(180deg)
+    transform: rotateY(180deg);
 }
 
 .flip-card-back,
@@ -79,12 +81,12 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 50px
+    border-radius: 50%;
 }
 
 .flip-card-front {
     background-color: #f7f7f7;
-    transition: opacity .5s ease-in-out
+    transition: opacity 0.5s ease-in-out;
 }
 
 .flip-card-back {
@@ -92,59 +94,126 @@ h2 {
     font-family: Cursive, sans-serif;
     color: #555;
     font-size: 1.25em;
-    font-weight: 700
+    font-weight: 700;
 }
 
 .icon {
     font-size: 4rem;
-    color: #555
+    color: #555;
 }
 
 h2 {
     font-size: 2.5rem;
     margin-bottom: 2rem;
-    font-weight: 700
+    font-weight: 700;
 }
 
 .about-wrapper {
     position: relative;
-    transition: transform .3s ease-in-out
+    transition: transform 0.3s ease-in-out;
 }
 
 .about-wrapper:hover .about-block {
-    transform: scale(1.05)
+    transform: scale(1.05);
 }
 
 .rotate .flip-card-front {
-    opacity: 0
+    opacity: 0;
 }
 
-@media (max-width:1024px) {
-    .about-container {
-        flex-direction: column
+/* Media Queries */
+
+/* Tablet */
+@media (max-width: 1024px) {
+    .about {
+        padding: 0 20px 40px;
     }
+
+    .about-block {
+        margin: 0;
+        padding: 10px;
+    }
+
+
+    .container{
+        gap: 15px;
+    }
+
+    .about-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-block:nth-child(odd),
+    .about-wrapper:nth-child(odd) {
+        transform: none;
+    }       
+
+    .about-block:nth-child(odd),
+    .about-wrapper:nth-child(odd) {
+        transform: none;
+    }
+
 
     .about-block {
         width: 90%;
         max-width: 350px;
-        margin-bottom: 20px
+        margin-bottom: 20px;
     }
 }
 
-@media (max-width:767px) {
-    .about-block {
-        width: 100%;
-        max-width: 350px;
-        margin-bottom: 20px;
-        height: 155px
+/* Mobile */
+@media (max-width: 767px) {
+    .about {
+        padding: 0 10px 30px;
     }
 
+    .about-block {
+        margin: 0;
+        padding: 10px;
+    }
+
+    .about-block:hover {
+        display: none;
+    }
+
+    .about-block:nth-child(odd),
+    .about-wrapper:nth-child(odd) {
+        transform: none;
+    }       
+
+    .about-block:nth-child(odd),
+    .about-wrapper:nth-child(odd) {
+        transform: none;
+    }
+
+    .container{
+        gap: 15px;
+    }
+
+
     .about-container {
-        width: 100%;
         padding: 15px;
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 20px
+        gap: 20px;
+    }
+
+    .about-block {
+        width: 100%;
+        max-width: 300px;
+        margin-bottom: 15px;
+        height: 150px;
+        font-size: 12px;
+    }
+
+    h2 {
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .icon {
+        font-size: 3rem;
     }
 }
