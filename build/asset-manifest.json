@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.9eeeb297.css",
+    "main.css": "/portfolio/static/css/main.8af3d84f.css",
     "main.js": "/portfolio/static/js/main.e14a25da.js",
     "static/js/453.898415da.chunk.js": "/portfolio/static/js/453.898415da.chunk.js",
     "static/media/CV.-Lucille-SANZO-developpeuse.pdf": "/portfolio/static/media/CV.-Lucille-SANZO-developpeuse.34a2820c9f7a89c45ae1.pdf",
@@ -24,12 +24,12 @@
     "static/media/slick.woff": "/portfolio/static/media/slick.295183786cd8a1389865.woff",
     "static/media/express.svg": "/portfolio/static/media/express.48451c5798d0686824ee9134ca4c8ff2.svg",
     "index.html": "/portfolio/index.html",
-    "main.9eeeb297.css.map": "/portfolio/static/css/main.9eeeb297.css.map",
+    "main.8af3d84f.css.map": "/portfolio/static/css/main.8af3d84f.css.map",
     "main.e14a25da.js.map": "/portfolio/static/js/main.e14a25da.js.map",
     "453.898415da.chunk.js.map": "/portfolio/static/js/453.898415da.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9eeeb297.css",
+    "static/css/main.8af3d84f.css",
     "static/js/main.e14a25da.js"
   ]
 }
