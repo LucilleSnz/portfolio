@@ -36,12 +36,12 @@
 }
 
 .header-content p {
+    font-family: cursive;
+    font-size: 2em;
+    font-style: italic;
     margin-top: 20px;
     color: #2c2c2c;
-    font-family: "Parisienne", cursive;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 2.5em;
+    font-weight: 700
 }
 
 .burger-menu {
@@ -131,3 +131,5 @@
         right: 35px;
     }
 }
+
+

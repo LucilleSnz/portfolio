@@ -52,6 +52,8 @@ function Header() {
                         <li onClick={() => scrollToSection('projects')}>Projets</li>
                         <li onClick={() => scrollToSection('skills')}>Compétences</li>
                         <li onClick={() => scrollToSection('about')}>Biographie</li>
+                        <li onClick={() => scrollToSection('form')}>Contact</li>
+                        <li onClick={() => scrollToSection('footer')}>A propos</li>
                     </ul>
                 </div>
             )}

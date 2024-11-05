@@ -91,10 +91,11 @@ h2 {
 
 .flip-card-back {
     background-color: #f5f5f5;
-    font-family: Cursive, sans-serif;
+    font-family: "Parisienne", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.3em;
     color: #555;
-    font-size: 1.25em;
-    font-weight: 700;
 }
 
 .icon {

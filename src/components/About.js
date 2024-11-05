@@ -64,7 +64,7 @@ function About() {
                                 <FontAwesomeIcon icon={faBriefcase} className="icon" />
                             </div>
                             <div className="flip-card-back">
-                                <p>Après mon bac STL, j'ai travaillé dans le commerce et la vente, pour finir dans l'analytiques.
+                                <p>Après mon bac, j'ai travaillé dans le commerce et la vente, pour finir dans l'analytique.
                                     Malgré mes progressions, je me suis rapidement ennuyée dans ces postes.</p>
                             </div>
                         </div>

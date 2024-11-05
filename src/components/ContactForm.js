@@ -19,7 +19,6 @@ const ContactForm = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
 
-        // Remplacez ces valeurs par celles obtenues dans EmailJS
         const serviceID = 'service_5lil41f'; // Remplacez par votre Service ID
         const templateID = 'template_djihmm8'; // Remplacez par votre Template ID
         const userID = 'B7GL7d4ESaMoJcpBA'; // Remplacez par votre User ID
@@ -36,7 +35,7 @@ const ContactForm = () => {
     };
 
     return (
-        <div className="contact-form-container">
+        <div className="contact-form-container" id="form">
             <h2>Contactez-moi</h2>
             {!submitted ? (
                 <form onSubmit={handleSubmit} className="contact-form">

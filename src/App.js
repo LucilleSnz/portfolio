@@ -8,6 +8,7 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import ContactForm from './components/ContactForm';
 import Petals from './components/Petals';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -22,6 +23,8 @@ function App() {
           <About />
           <div className="separator"></div>
           <ContactForm />
+          <div className="separator"></div>
+          <Footer />
       </div>
   );
 }
