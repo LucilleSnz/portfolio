@@ -6,6 +6,8 @@
     justify-content: center;
     background-image: url('../images/footer.webp');
     align-items: center; 
+    background-position: center;
+    background-size: cover;
 }
 
 .footer-left {
