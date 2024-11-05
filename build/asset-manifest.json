@@ -1,19 +1,21 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.ad2332bd.css",
-    "main.js": "/portfolio/static/js/main.767bffd3.js",
+    "main.css": "/portfolio/static/css/main.9eeeb297.css",
+    "main.js": "/portfolio/static/js/main.e14a25da.js",
     "static/js/453.898415da.chunk.js": "/portfolio/static/js/453.898415da.chunk.js",
+    "static/media/CV.-Lucille-SANZO-developpeuse.pdf": "/portfolio/static/media/CV.-Lucille-SANZO-developpeuse.34a2820c9f7a89c45ae1.pdf",
     "static/media/nina.png": "/portfolio/static/media/nina.c06be4fa555ebc0ca172.png",
     "static/media/santasecret.png": "/portfolio/static/media/santasecret.1ab1a7cdb6007d01c702.png",
     "static/media/feuille contact.png": "/portfolio/static/media/feuille contact.00a101c52ccf3fa75458.png",
     "static/media/photobooki.png": "/portfolio/static/media/photobooki.35747287f0ea912f6078.png",
     "static/media/grimoire.png": "/portfolio/static/media/grimoire.ddd383513c3336438038.png",
     "static/media/bluel.png": "/portfolio/static/media/bluel.3055119ff0d93ea56502.png",
-    "static/media/petal2.png": "/portfolio/static/media/petal2.5bd546bd456514f2ed99.png",
     "static/media/fond.jpg": "/portfolio/static/media/fond.d9824fa6836bc6f13c86.jpg",
-    "static/media/petal1.png": "/portfolio/static/media/petal1.2deec1491c062e025afe.png",
-    "static/media/petal3.png": "/portfolio/static/media/petal3.45b3eb08424c20ec9773.png",
+    "static/media/footer.webp": "/portfolio/static/media/footer.6ebb22b5bd7a0a40099b.webp",
+    "static/media/petal1.png": "/portfolio/static/media/petal1.50e7533b9a782fbaa8d9.png",
     "static/media/profil.png": "/portfolio/static/media/profil.472fbc44f1ce84b8e0fe.png",
+    "static/media/petal3.png": "/portfolio/static/media/petal3.a392f25bb485d996d735.png",
+    "static/media/petal2.png": "/portfolio/static/media/petal2.f48c4bd2d6c4d9158eaf.png",
     "static/media/postman.svg": "/portfolio/static/media/postman.46d1e4ed23634d838b3b30496f1bbfd5.svg",
     "static/media/mongodb.svg": "/portfolio/static/media/mongodb.8c44a1f47a0e7254c985c6195177e8d7.svg",
     "static/media/slick.svg": "/portfolio/static/media/slick.2630a3e3eab21c607e21.svg",
@@ -22,12 +24,12 @@
     "static/media/slick.woff": "/portfolio/static/media/slick.295183786cd8a1389865.woff",
     "static/media/express.svg": "/portfolio/static/media/express.48451c5798d0686824ee9134ca4c8ff2.svg",
     "index.html": "/portfolio/index.html",
-    "main.ad2332bd.css.map": "/portfolio/static/css/main.ad2332bd.css.map",
-    "main.767bffd3.js.map": "/portfolio/static/js/main.767bffd3.js.map",
+    "main.9eeeb297.css.map": "/portfolio/static/css/main.9eeeb297.css.map",
+    "main.e14a25da.js.map": "/portfolio/static/js/main.e14a25da.js.map",
     "453.898415da.chunk.js.map": "/portfolio/static/js/453.898415da.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ad2332bd.css",
-    "static/js/main.767bffd3.js"
+    "static/css/main.9eeeb297.css",
+    "static/js/main.e14a25da.js"
   ]
 }
