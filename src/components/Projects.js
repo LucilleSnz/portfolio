@@ -42,6 +42,13 @@ const projects = [
     description: `Gérer les événements utilisateurs avec JavaScript.
     Manipuler les éléments du DOM avec JavaScript.
     Récupérer les données utilisateurs dans le JavaScript via des formulaires.` },
+  {
+    title: 'Projet Messagerie instanée',
+    img: require('../images/messagerie.png'),
+    link: 'https://github.com/LucilleSnz/Messagerie',
+    description: `création d’un serveur Node.js.
+    Communication temps réel avec Socket.IO.
+    interface web interactive en HTML/CSS/JS.` },
 ];
 function Projects() {
   const settings = {
