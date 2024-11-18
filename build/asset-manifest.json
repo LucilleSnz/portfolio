@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.1b70cf73.css",
-    "main.js": "/portfolio/static/js/main.e14a25da.js",
+    "main.js": "/portfolio/static/js/main.07e809dc.js",
     "static/js/453.898415da.chunk.js": "/portfolio/static/js/453.898415da.chunk.js",
     "static/media/CV.-Lucille-SANZO-developpeuse.pdf": "/portfolio/static/media/CV.-Lucille-SANZO-developpeuse.34a2820c9f7a89c45ae1.pdf",
     "static/media/nina.png": "/portfolio/static/media/nina.c06be4fa555ebc0ca172.png",
@@ -14,6 +14,7 @@
     "static/media/footer.webp": "/portfolio/static/media/footer.6ebb22b5bd7a0a40099b.webp",
     "static/media/petal1.png": "/portfolio/static/media/petal1.50e7533b9a782fbaa8d9.png",
     "static/media/profil.png": "/portfolio/static/media/profil.472fbc44f1ce84b8e0fe.png",
+    "static/media/messagerie.png": "/portfolio/static/media/messagerie.96f0f0e8167848cc9946.png",
     "static/media/petal3.png": "/portfolio/static/media/petal3.a392f25bb485d996d735.png",
     "static/media/petal2.png": "/portfolio/static/media/petal2.f48c4bd2d6c4d9158eaf.png",
     "static/media/postman.svg": "/portfolio/static/media/postman.46d1e4ed23634d838b3b30496f1bbfd5.svg",
@@ -25,11 +26,11 @@
     "static/media/express.svg": "/portfolio/static/media/express.48451c5798d0686824ee9134ca4c8ff2.svg",
     "index.html": "/portfolio/index.html",
     "main.1b70cf73.css.map": "/portfolio/static/css/main.1b70cf73.css.map",
-    "main.e14a25da.js.map": "/portfolio/static/js/main.e14a25da.js.map",
+    "main.07e809dc.js.map": "/portfolio/static/js/main.07e809dc.js.map",
     "453.898415da.chunk.js.map": "/portfolio/static/js/453.898415da.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1b70cf73.css",
-    "static/js/main.e14a25da.js"
+    "static/js/main.07e809dc.js"
   ]
 }
